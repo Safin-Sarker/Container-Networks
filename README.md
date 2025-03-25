@@ -10,8 +10,6 @@ This project demonstrates how to simulate a virtual network environment using Li
 
 ![Network Topology](topology.png)
 
-> Save your network diagram as `topology.png` in this project folder to display it here.
-
 ### Text-Based Topology
 
 [ red ] <---> [ br0 ] <---> [ route ] <---> [ br1 ] <---> [ blue ] 10.11.0.2 10.11.0.1 10.12.0.1 10.12.0.2
@@ -26,7 +24,7 @@ This project demonstrates how to simulate a virtual network environment using Li
 ## 📁 Files
 
 - `Makefile`: Automates setup, testing, and cleanup of the simulated network
-- `topology.png`: Optional diagram image to visualize the topology (you provide this)
+- `topology.png`: Diagram image to visualize the topology 
 
 ---
 
@@ -44,14 +42,23 @@ This project demonstrates how to simulate a virtual network environment using Li
 
 ## 🚀 Usage
 
-🔧 1. Run the following command to set up the network:
+📥 1. Clone the Repository
+     <pre> ``` git clone https://github.com/Safin-Sarker/Container-Networks ``` </pre>
+
+  Navigate to the Container-Networks directory:
+      <pre> ``` cd Container-Networks``` </pre>
+
+🔧 2. Run the following command to set up the network:
     <pre> ``` make setup ``` </pre>
+  This will create the namespaces, bridges, veth pairs, assign IPs, set default routes, and enable IP forwarding.
 
-🧪 2. Run the following command to test up the network:
+🧪 3. Run the following command to test up the network:
      <pre> ``` make test ``` </pre>
+    This will ping from red to blue , blue to red and test if the router is forwarding correctly.
 
-🧹 3. Run the following command toClean Up the Network
+🧹 4. Run the following command toClean Up the Network
      <pre> ``` make clean ``` </pre>
+    This removes all namespaces, interfaces, and bridges created during setup.
 
 
   -----
@@ -98,8 +105,13 @@ By completing this simulation, you will understand:
 
 ----
 
-## 👨‍💻 Author
-Md Safin Sarker
+## Contact
+For questions or feedback, reach out to:
+
+- Author: Md Safin Sarker
+- Email:safinsarker1122@gmail.com
+- Linkedin: www.linkedin.com/in/safin-sarker
+
 
 
   
