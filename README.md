@@ -97,7 +97,7 @@ if ping fails:
 
 ## 🎯 Learning Outcomes
 
-By completing this simulation, you will understand:
+By completing this simulation, I understand:
 - How Linux network namespaces provide isolation
 - How to connect namespaces using veth pairs and bridges
 - How to manually assign IPs and configure routes
