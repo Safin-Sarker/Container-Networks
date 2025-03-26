@@ -1,7 +1,6 @@
-# 🖧 Linux Network Namespace Simulation
-
-This project demonstrates how to simulate a virtual network environment using Linux network namespaces, virtual Ethernet (veth) pairs, and bridges. It models a basic network topology with two isolated network namespaces (`red` and `blue`) connected through a router namespace (`route`).
-
+# 🖧 FIB-Based Network Routing Simulation using Linux Namespaces
+This project simulates a virtual network topology to demonstrate how Linux network namespaces, virtual Ethernet (veth) pairs, and bridges can be used to emulate FIB (Forwarding Information Base)-driven routing. The setup consists of two isolated network namespaces (red and blue) connected through a central router namespace, which is responsible for IP forwarding based on destination addresses.
+By mimicking how a router populates and uses the FIB to make forwarding decisions, this simulation offers hands-on insight into core routing concepts using simple Linux tools.
 ---
 
 ## 📊 Topology Overview
